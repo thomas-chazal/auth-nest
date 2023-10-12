@@ -45,6 +45,9 @@ $ npm install @prisma/client
 $ nest g mo user
 $ nest g s user
 $ nest g co user 
+$ npm i @nestjs/mapped-types 
+$ npm i class-validator
+$ npm i class-transformer
 ```
 
 ## Running the app
