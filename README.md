@@ -29,7 +29,7 @@
 ## Installation of dependencies & configuration
 
 
-## First Step
+## GENERAL
 ```bash 
 $ sudo npm i -g @nestjs/cli
 $ nest new auth-nest
@@ -40,7 +40,7 @@ $ npx prisma migrate dev --name init
 $ npm install @prisma/client
 ```
 
-## Second Step (create user) 
+## Create user 
 ```bash 
 $ nest g mo user
 $ nest g s user
@@ -48,44 +48,14 @@ $ nest g co user
 $ npm i @nestjs/mapped-types 
 $ npm i class-validator
 $ npm i class-transformer
+$ npm i bcrypt 
+$ npm i -D @types/bcrypt
 ```
 
-## Running the app
-
+# Auth Module
 ```bash
-# development
-$ npm run start
+$ nest g mo auth
+$ nest g co auth
+$ nest g s auth
+````
 
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
