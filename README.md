@@ -28,7 +28,9 @@
 
 ## Installation of dependencies & configuration
 
-```bash
+
+## First Step
+```bash 
 $ sudo npm i -g @nestjs/cli
 $ nest new auth-nest
 $ npm install prisma --save-dev
@@ -36,7 +38,13 @@ $ npx prisma init
 $ npm i --save @nestjs/config
 $ npx prisma migrate dev --name init
 $ npm install @prisma/client
+```
 
+## Second Step (create user) 
+```bash 
+$ nest g mo user
+$ nest g s user
+$ nest g co user 
 ```
 
 ## Running the app
