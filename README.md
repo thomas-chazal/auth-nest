@@ -52,10 +52,20 @@ $ npm i bcrypt
 $ npm i -D @types/bcrypt
 ```
 
-# Auth Module
+## Auth Module
 ```bash
 $ nest g mo auth
 $ nest g co auth
 $ nest g s auth
-````
+$ npx prisma studio
+```
+
+## Generating JWT Access and Refresh Token
+```bash
+$ npm i @nestjs/jwt
+$ openssl rand -base64 64 (créer une clé secrète aléatoire)
+
+
+
+
 
